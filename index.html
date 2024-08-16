@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora de IMC</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="imcazul.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1 class="titulo">Calculadora de IMC 🖊</h1>
+            <h2 class="subTitulo"> verifique seu peso azul!</h2>
+        </header>
+        <main>
+
+            <form class="formulario">
+                <label for="name" class="label-name">Digite seu nome!</label>
+                <input id="name" type="text" class="inp-name">
+
+                <label for="peso" class="label-peso">Digite seu
+                    peso!</label>
+                <input type="text" id="peso" class="inp-peso"
+                    placeholder="Digite o peso com ponto">
+
+                <label for="altura" class="label-altura">Digite sua
+                    altura!</label>
+                <input type="text" id="altura" class="inp-altura"
+                    placeholder="Digite o altura com ponto">
+
+                <input type="button" class="button" value="Calcular"
+                    name="Calcular" onclick="calcular()">
+            </form>
+            <div class="resultado">
+                <h3 class="resultado-imc"></h3>
+                <p class="resultado-imc-p"></p>
+            </div>
+        </main>
+        <footer>
+            <p>Tabela imc de acordo com o peso ideal do Manoel Gomes.</p>
+        </footer>
+
+    </body>
+</html>
